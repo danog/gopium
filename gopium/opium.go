@@ -4,6 +4,6 @@ package gopium
 const (
 	NAME    = "gopium"
 	VERSION = "1.8.0"
-	PKG     = "https://github.com/1pkg/gopium"
-	STAMP   = "🌺 gopium @1pkg"
+	PKG     = "https://github.com/danog/gopium"
+	STAMP   = "🌺 gopium @danog"
 )

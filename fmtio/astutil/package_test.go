@@ -9,10 +9,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/1pkg/gopium/fmtio"
-	"github.com/1pkg/gopium/gopium"
-	"github.com/1pkg/gopium/tests/data"
-	"github.com/1pkg/gopium/tests/mocks"
+	"github.com/danog/gopium/fmtio"
+	"github.com/danog/gopium/gopium"
+	"github.com/danog/gopium/tests/data"
+	"github.com/danog/gopium/tests/mocks"
 )
 
 func TestPackage(t *testing.T) {

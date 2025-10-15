@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/1pkg/gopium/gopium"
+	"github.com/danog/gopium/gopium"
 )
 
 func TestNote(t *testing.T) {
@@ -41,7 +41,7 @@ func TestNote(t *testing.T) {
 				Fields: []gopium.Field{
 					{
 						Name: "test",
-						Doc:  []string{"// field size: 0 bytes; field align: 0 bytes; field ptr: 0 bytes; - 🌺 gopium @1pkg"},
+						Doc:  []string{"// field size: 0 bytes; field align: 0 bytes; field ptr: 0 bytes; - 🌺 gopium @danog"},
 					},
 				},
 			},
@@ -62,7 +62,7 @@ func TestNote(t *testing.T) {
 				Fields: []gopium.Field{
 					{
 						Name:    "test",
-						Comment: []string{"// field size: 0 bytes; field align: 0 bytes; field ptr: 0 bytes; - 🌺 gopium @1pkg"},
+						Comment: []string{"// field size: 0 bytes; field align: 0 bytes; field ptr: 0 bytes; - 🌺 gopium @danog"},
 					},
 				},
 			},
@@ -72,7 +72,7 @@ func TestNote(t *testing.T) {
 			note: stnotedoc,
 			ctx:  context.Background(),
 			r: gopium.Struct{
-				Doc: []string{"// struct size: 0 bytes; struct align: 1 bytes; struct aligned size: 0 bytes; struct ptr scan size: 0 bytes; - 🌺 gopium @1pkg"},
+				Doc: []string{"// struct size: 0 bytes; struct align: 1 bytes; struct aligned size: 0 bytes; struct ptr scan size: 0 bytes; - 🌺 gopium @danog"},
 			},
 		},
 		"non empty struct should be applied to itself with expected doc struct": {
@@ -88,7 +88,7 @@ func TestNote(t *testing.T) {
 			},
 			r: gopium.Struct{
 				Name: "test",
-				Doc:  []string{"// struct size: 0 bytes; struct align: 1 bytes; struct aligned size: 0 bytes; struct ptr scan size: 0 bytes; - 🌺 gopium @1pkg"},
+				Doc:  []string{"// struct size: 0 bytes; struct align: 1 bytes; struct aligned size: 0 bytes; struct ptr scan size: 0 bytes; - 🌺 gopium @danog"},
 				Fields: []gopium.Field{
 					{
 						Name: "test",
@@ -109,7 +109,7 @@ func TestNote(t *testing.T) {
 			},
 			r: gopium.Struct{
 				Name:    "test",
-				Comment: []string{"// struct size: 0 bytes; struct align: 1 bytes; struct aligned size: 0 bytes; struct ptr scan size: 0 bytes; - 🌺 gopium @1pkg"},
+				Comment: []string{"// struct size: 0 bytes; struct align: 1 bytes; struct aligned size: 0 bytes; struct ptr scan size: 0 bytes; - 🌺 gopium @danog"},
 				Fields: []gopium.Field{
 					{
 						Name: "test",
@@ -156,12 +156,12 @@ func TestNote(t *testing.T) {
 						Size:  8,
 						Align: 4,
 						Ptr:   4,
-						Doc:   []string{"// field size: 8 bytes; field align: 4 bytes; field ptr: 4 bytes; - 🌺 gopium @1pkg"},
+						Doc:   []string{"// field size: 8 bytes; field align: 4 bytes; field ptr: 4 bytes; - 🌺 gopium @danog"},
 					},
 					{
 						Name: "test2",
 						Type: "string",
-						Doc:  []string{"test", "// field size: 0 bytes; field align: 0 bytes; field ptr: 0 bytes; - 🌺 gopium @1pkg"},
+						Doc:  []string{"test", "// field size: 0 bytes; field align: 0 bytes; field ptr: 0 bytes; - 🌺 gopium @danog"},
 					},
 					{
 						Name:  "test2",
@@ -169,7 +169,7 @@ func TestNote(t *testing.T) {
 						Size:  8,
 						Align: 8,
 						Ptr:   6,
-						Doc:   []string{"// field size: 8 bytes; field align: 8 bytes; field ptr: 6 bytes; - 🌺 gopium @1pkg"},
+						Doc:   []string{"// field size: 8 bytes; field align: 8 bytes; field ptr: 6 bytes; - 🌺 gopium @danog"},
 					},
 				},
 			},
@@ -212,12 +212,12 @@ func TestNote(t *testing.T) {
 						Size:    8,
 						Align:   4,
 						Ptr:     4,
-						Comment: []string{"// field size: 8 bytes; field align: 4 bytes; field ptr: 4 bytes; - 🌺 gopium @1pkg"},
+						Comment: []string{"// field size: 8 bytes; field align: 4 bytes; field ptr: 4 bytes; - 🌺 gopium @danog"},
 					},
 					{
 						Name:    "test2",
 						Type:    "string",
-						Comment: []string{"test", "// field size: 0 bytes; field align: 0 bytes; field ptr: 0 bytes; - 🌺 gopium @1pkg"},
+						Comment: []string{"test", "// field size: 0 bytes; field align: 0 bytes; field ptr: 0 bytes; - 🌺 gopium @danog"},
 					},
 					{
 						Name:    "test2",
@@ -225,7 +225,7 @@ func TestNote(t *testing.T) {
 						Size:    8,
 						Align:   8,
 						Ptr:     6,
-						Comment: []string{"// field size: 8 bytes; field align: 8 bytes; field ptr: 6 bytes; - 🌺 gopium @1pkg"},
+						Comment: []string{"// field size: 8 bytes; field align: 8 bytes; field ptr: 6 bytes; - 🌺 gopium @danog"},
 					},
 				},
 			},
@@ -264,7 +264,7 @@ func TestNote(t *testing.T) {
 						Name:    "test1",
 						Size:    3,
 						Align:   1,
-						Comment: []string{"// field size: 3 bytes; field align: 1 bytes; field ptr: 0 bytes; - 🌺 gopium @1pkg"},
+						Comment: []string{"// field size: 3 bytes; field align: 1 bytes; field ptr: 0 bytes; - 🌺 gopium @danog"},
 					},
 					{
 						Name:    "test2",
@@ -272,13 +272,13 @@ func TestNote(t *testing.T) {
 						Size:    8,
 						Align:   8,
 						Ptr:     4,
-						Comment: []string{"// field size: 8 bytes; field align: 8 bytes; field ptr: 4 bytes; - 🌺 gopium @1pkg"},
+						Comment: []string{"// field size: 8 bytes; field align: 8 bytes; field ptr: 4 bytes; - 🌺 gopium @danog"},
 					},
 					{
 						Name:    "test3",
 						Size:    3,
 						Align:   1,
-						Comment: []string{"// field size: 3 bytes; field align: 1 bytes; field ptr: 0 bytes; - 🌺 gopium @1pkg"},
+						Comment: []string{"// field size: 3 bytes; field align: 1 bytes; field ptr: 0 bytes; - 🌺 gopium @danog"},
 					},
 				},
 			},
@@ -312,7 +312,7 @@ func TestNote(t *testing.T) {
 			},
 			r: gopium.Struct{
 				Name: "test",
-				Doc:  []string{"test", "// struct size: 16 bytes; struct align: 8 bytes; struct aligned size: 16 bytes; struct ptr scan size: 10 bytes; - 🌺 gopium @1pkg"},
+				Doc:  []string{"test", "// struct size: 16 bytes; struct align: 8 bytes; struct aligned size: 16 bytes; struct ptr scan size: 10 bytes; - 🌺 gopium @danog"},
 				Fields: []gopium.Field{
 					{
 						Name:  "test1",
@@ -364,7 +364,7 @@ func TestNote(t *testing.T) {
 			},
 			r: gopium.Struct{
 				Name:    "test",
-				Comment: []string{"test", "// struct size: 16 bytes; struct align: 8 bytes; struct aligned size: 16 bytes; struct ptr scan size: 10 bytes; - 🌺 gopium @1pkg"},
+				Comment: []string{"test", "// struct size: 16 bytes; struct align: 8 bytes; struct aligned size: 16 bytes; struct ptr scan size: 10 bytes; - 🌺 gopium @danog"},
 				Fields: []gopium.Field{
 					{
 						Name:  "test1",
@@ -415,7 +415,7 @@ func TestNote(t *testing.T) {
 			},
 			r: gopium.Struct{
 				Name:    "test",
-				Comment: []string{"test", "// struct size: 14 bytes; struct align: 8 bytes; struct aligned size: 24 bytes; struct ptr scan size: 7 bytes; - 🌺 gopium @1pkg"},
+				Comment: []string{"test", "// struct size: 14 bytes; struct align: 8 bytes; struct aligned size: 24 bytes; struct ptr scan size: 7 bytes; - 🌺 gopium @danog"},
 				Fields: []gopium.Field{
 					{
 						Name:  "test1",

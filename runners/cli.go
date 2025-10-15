@@ -10,11 +10,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/1pkg/gopium/fmtio"
-	"github.com/1pkg/gopium/gopium"
-	"github.com/1pkg/gopium/strategies"
-	"github.com/1pkg/gopium/typepkg"
-	"github.com/1pkg/gopium/walkers"
+	"github.com/danog/gopium/fmtio"
+	"github.com/danog/gopium/gopium"
+	"github.com/danog/gopium/strategies"
+	"github.com/danog/gopium/typepkg"
+	"github.com/danog/gopium/walkers"
 
 	"golang.org/x/tools/go/packages"
 )
@@ -28,7 +28,7 @@ type Cli struct {
 	wname  gopium.WalkerName      `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	snames []gopium.StrategyName  `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	_      [40]byte               `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
-} // struct size: 128 bytes; struct align: 8 bytes; struct aligned size: 128 bytes; struct ptr scan size: 72 bytes; - 🌺 gopium @1pkg
+} // struct size: 128 bytes; struct align: 8 bytes; struct aligned size: 128 bytes; struct ptr scan size: 72 bytes; - 🌺 gopium @danog
 
 // NewCli helps to spawn new cli application runner
 // from list of received parameters or returns error

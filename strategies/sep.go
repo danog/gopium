@@ -3,8 +3,8 @@ package strategies
 import (
 	"context"
 
-	"github.com/1pkg/gopium/collections"
-	"github.com/1pkg/gopium/gopium"
+	"github.com/danog/gopium/collections"
+	"github.com/danog/gopium/gopium"
 )
 
 // list of fshare presets
@@ -33,7 +33,7 @@ type sep struct {
 	sys     bool           `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	top     bool           `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	_       [30]byte       `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
-} // struct size: 64 bytes; struct align: 8 bytes; struct aligned size: 64 bytes; struct ptr scan size: 16 bytes; - 🌺 gopium @1pkg
+} // struct size: 64 bytes; struct align: 8 bytes; struct aligned size: 64 bytes; struct ptr scan size: 16 bytes; - 🌺 gopium @danog
 
 // Bytes erich sep strategy with custom bytes
 func (stg sep) Bytes(bytes uint) sep {

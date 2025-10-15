@@ -6,8 +6,8 @@ import (
 	"regexp"
 	"sync"
 
-	"github.com/1pkg/gopium/collections"
-	"github.com/1pkg/gopium/gopium"
+	"github.com/danog/gopium/collections"
+	"github.com/danog/gopium/gopium"
 )
 
 // applied encapsulates visited by strategy
@@ -19,7 +19,7 @@ type applied struct {
 	O   gopium.Struct `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	R   gopium.Struct `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	_   [32]byte      `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
-} // struct size: 256 bytes; struct align: 8 bytes; struct aligned size: 256 bytes; struct ptr scan size: 208 bytes; - 🌺 gopium @1pkg
+} // struct size: 256 bytes; struct align: 8 bytes; struct aligned size: 256 bytes; struct ptr scan size: 208 bytes; - 🌺 gopium @danog
 
 // appliedCh defines abstraction that helps
 // keep applied stream results

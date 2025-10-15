@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/1pkg/gopium/collections"
-	"github.com/1pkg/gopium/gopium"
-	"github.com/1pkg/gopium/tests/mocks"
+	"github.com/danog/gopium/collections"
+	"github.com/danog/gopium/gopium"
+	"github.com/danog/gopium/tests/mocks"
 )
 
 func TestGroup(t *testing.T) {
@@ -91,7 +91,7 @@ func TestGroup(t *testing.T) {
 						Size:  8,
 						Align: 4,
 						Tag:   `gopium:"fields_annotate_doc"`,
-						Doc:   []string{"// field size: 8 bytes; field align: 4 bytes; field ptr: 0 bytes; - 🌺 gopium @1pkg"},
+						Doc:   []string{"// field size: 8 bytes; field align: 4 bytes; field ptr: 0 bytes; - 🌺 gopium @danog"},
 					},
 				},
 			},
@@ -145,7 +145,7 @@ func TestGroup(t *testing.T) {
 						Size:  8,
 						Align: 4,
 						Tag:   `gopium:"group:def;fields_annotate_doc"`,
-						Doc:   []string{"// field size: 8 bytes; field align: 4 bytes; field ptr: 0 bytes; - 🌺 gopium @1pkg"},
+						Doc:   []string{"// field size: 8 bytes; field align: 4 bytes; field ptr: 0 bytes; - 🌺 gopium @danog"},
 					},
 				},
 			},
@@ -172,7 +172,7 @@ func TestGroup(t *testing.T) {
 						Size:  8,
 						Align: 4,
 						Tag:   `gopium:";;group:def;fields_annotate_doc;;"`,
-						Doc:   []string{"// field size: 8 bytes; field align: 4 bytes; field ptr: 0 bytes; - 🌺 gopium @1pkg"},
+						Doc:   []string{"// field size: 8 bytes; field align: 4 bytes; field ptr: 0 bytes; - 🌺 gopium @danog"},
 					},
 				},
 			},
@@ -414,7 +414,7 @@ func TestGroup(t *testing.T) {
 						Size:  8,
 						Align: 4,
 						Tag:   `gopium:"group:def-1;fields_annotate_doc,struct_annotate_doc"`,
-						Doc:   []string{"// field size: 8 bytes; field align: 4 bytes; field ptr: 0 bytes; - 🌺 gopium @1pkg"},
+						Doc:   []string{"// field size: 8 bytes; field align: 4 bytes; field ptr: 0 bytes; - 🌺 gopium @danog"},
 					},
 					{
 						Name:    "test-1",
@@ -422,7 +422,7 @@ func TestGroup(t *testing.T) {
 						Align:   8,
 						Ptr:     4,
 						Tag:     `gopium:"group:def-2;fields_annotate_comment,explicit_paddings_system_alignment,cache_rounding_cpu_l1_discrete"`,
-						Comment: []string{"// field size: 12 bytes; field align: 8 bytes; field ptr: 4 bytes; - 🌺 gopium @1pkg"},
+						Comment: []string{"// field size: 12 bytes; field align: 8 bytes; field ptr: 4 bytes; - 🌺 gopium @danog"},
 					},
 					{
 						Name:    "test-3",
@@ -430,7 +430,7 @@ func TestGroup(t *testing.T) {
 						Align:   4,
 						Ptr:     4,
 						Tag:     `gopium:"group:def-2;fields_annotate_comment,explicit_paddings_system_alignment,cache_rounding_cpu_l1_discrete"`,
-						Comment: []string{"// field size: 8 bytes; field align: 4 bytes; field ptr: 4 bytes; - 🌺 gopium @1pkg"},
+						Comment: []string{"// field size: 8 bytes; field align: 4 bytes; field ptr: 4 bytes; - 🌺 gopium @danog"},
 					},
 					collections.PadField(4),
 				},

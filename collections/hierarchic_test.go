@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/1pkg/gopium/gopium"
+	"github.com/danog/gopium/gopium"
 )
 
 func TestHierarchicPushCat(t *testing.T) {

@@ -2,7 +2,7 @@
 
 package note
 
-import "github.com/1pkg/gopium/gopium"
+import "github.com/danog/gopium/gopium"
 
 // random function
 func rnd() int {

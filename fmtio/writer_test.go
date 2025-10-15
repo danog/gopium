@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/1pkg/gopium/gopium"
+	"github.com/danog/gopium/gopium"
 )
 
 func TestWriter(t *testing.T) {

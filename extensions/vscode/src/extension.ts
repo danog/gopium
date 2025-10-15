@@ -42,13 +42,13 @@ function patchgo() {
 		return [
 			{
 				name: 'gopium',
-				importPath: 'github.com/1pkg/gopium',
+				importPath: 'github.com/danog/gopium',
 				isImportant: true,
 				description: '',
 			},
 			{
 				name: 'go-outline',
-				importPath: 'github.com/1pkg/goutline',
+				importPath: 'github.com/danog/goutline',
 				isImportant: true,
 				description: '',
 			},
@@ -60,14 +60,14 @@ function patchgo() {
 			case 'gopium':
 				return {
 					name: 'gopium',
-					importPath: 'github.com/1pkg/gopium',
+					importPath: 'github.com/danog/gopium',
 					isImportant: true,
 					description: '',
 				}
 			case 'go-outline':
 				return {
 					name: 'go-outline',
-					importPath: 'github.com/1pkg/goutline',
+					importPath: 'github.com/danog/goutline',
 					isImportant: true,
 					description: '',
 				}

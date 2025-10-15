@@ -4,8 +4,8 @@ import (
 	"context"
 	"sort"
 
-	"github.com/1pkg/gopium/collections"
-	"github.com/1pkg/gopium/gopium"
+	"github.com/danog/gopium/collections"
+	"github.com/danog/gopium/gopium"
 )
 
 // list of nlex presets
@@ -20,7 +20,7 @@ var (
 type nlex struct {
 	asc bool    `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	_   [1]byte `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
-} // struct size: 2 bytes; struct align: 1 bytes; struct aligned size: 2 bytes; struct ptr scan size: 0 bytes; - 🌺 gopium @1pkg
+} // struct size: 2 bytes; struct align: 1 bytes; struct aligned size: 2 bytes; struct ptr scan size: 0 bytes; - 🌺 gopium @danog
 
 // Apply nlex implementation
 func (stg nlex) Apply(ctx context.Context, o gopium.Struct) (gopium.Struct, error) {

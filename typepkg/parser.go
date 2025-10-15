@@ -11,7 +11,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/1pkg/gopium/gopium"
+	"github.com/danog/gopium/gopium"
 
 	"golang.org/x/tools/go/packages"
 )
@@ -33,7 +33,7 @@ type ParserXToolPackagesAst struct {
 	ModeTypes  packages.LoadMode `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	ModeAst    parser.Mode       `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	_          [16]byte          `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
-} // struct size: 128 bytes; struct align: 8 bytes; struct aligned size: 128 bytes; struct ptr scan size: 80 bytes; - 🌺 gopium @1pkg
+} // struct size: 128 bytes; struct align: 8 bytes; struct aligned size: 128 bytes; struct ptr scan size: 80 bytes; - 🌺 gopium @danog
 
 // ParseTypes ParserXToolPackagesAst implementation
 func (p *ParserXToolPackagesAst) ParseTypes(ctx context.Context, _ ...byte) (*types.Package, gopium.Locator, error) {

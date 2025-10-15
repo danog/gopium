@@ -10,13 +10,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/1pkg/gopium/fmtio"
-	"github.com/1pkg/gopium/fmtio/astutil"
-	"github.com/1pkg/gopium/gopium"
-	"github.com/1pkg/gopium/strategies"
-	"github.com/1pkg/gopium/tests/data"
-	"github.com/1pkg/gopium/tests/mocks"
-	"github.com/1pkg/gopium/typepkg"
+	"github.com/danog/gopium/fmtio"
+	"github.com/danog/gopium/fmtio/astutil"
+	"github.com/danog/gopium/gopium"
+	"github.com/danog/gopium/strategies"
+	"github.com/danog/gopium/tests/data"
+	"github.com/danog/gopium/tests/mocks"
+	"github.com/danog/gopium/typepkg"
 )
 
 func TestWast(t *testing.T) {

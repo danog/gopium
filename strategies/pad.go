@@ -3,8 +3,8 @@ package strategies
 import (
 	"context"
 
-	"github.com/1pkg/gopium/collections"
-	"github.com/1pkg/gopium/gopium"
+	"github.com/danog/gopium/collections"
+	"github.com/danog/gopium/gopium"
 )
 
 // list of pad presets
@@ -21,7 +21,7 @@ type pad struct {
 	curator gopium.Curator `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	sys     bool           `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	_       [15]byte       `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
-} // struct size: 32 bytes; struct align: 8 bytes; struct aligned size: 32 bytes; struct ptr scan size: 16 bytes; - 🌺 gopium @1pkg
+} // struct size: 32 bytes; struct align: 8 bytes; struct aligned size: 32 bytes; struct ptr scan size: 16 bytes; - 🌺 gopium @danog
 
 // Curator erich pad strategy with curator instance
 func (stg pad) Curator(curator gopium.Curator) pad {

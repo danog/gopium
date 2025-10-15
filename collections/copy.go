@@ -1,6 +1,6 @@
 package collections
 
-import "github.com/1pkg/gopium/gopium"
+import "github.com/danog/gopium/gopium"
 
 // CopyField defines helper that
 // deep copies provided field

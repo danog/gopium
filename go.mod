@@ -1,4 +1,4 @@
-module github.com/1pkg/gopium
+module github.com/danog/gopium
 
 go 1.24.0
 

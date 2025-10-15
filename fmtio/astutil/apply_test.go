@@ -11,13 +11,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/1pkg/gopium/collections"
-	"github.com/1pkg/gopium/fmtio"
-	"github.com/1pkg/gopium/gopium"
-	"github.com/1pkg/gopium/tests"
-	"github.com/1pkg/gopium/tests/data"
-	"github.com/1pkg/gopium/tests/mocks"
-	"github.com/1pkg/gopium/typepkg"
+	"github.com/danog/gopium/collections"
+	"github.com/danog/gopium/fmtio"
+	"github.com/danog/gopium/gopium"
+	"github.com/danog/gopium/tests"
+	"github.com/danog/gopium/tests/data"
+	"github.com/danog/gopium/tests/mocks"
+	"github.com/danog/gopium/typepkg"
 )
 
 func TestApply(t *testing.T) {
@@ -171,10 +171,10 @@ type Note struct {
 
 package note
 
-/* 1pkg - 🌺 gopium @1pkg */
+/* danog - 🌺 gopium @danog */
 type DocCom struct {
 	f complex128
-	// 🌺 gopium @1pkg
+	// 🌺 gopium @danog
 } // doc com
 `),
 				"tests_data_note_file-3.go": []byte(`
@@ -182,7 +182,7 @@ type DocCom struct {
 
 package note
 
-import "github.com/1pkg/gopium/gopium"
+import "github.com/danog/gopium/gopium"
 
 // random function
 func rnd() int {

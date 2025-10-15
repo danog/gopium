@@ -3,7 +3,7 @@ package data
 import (
 	"io"
 
-	"github.com/1pkg/gopium/gopium"
+	"github.com/danog/gopium/gopium"
 )
 
 // Writer defines tests data writter implementation
@@ -11,7 +11,7 @@ import (
 // but purifies location generation
 type Writer struct {
 	Writer gopium.CategoryWriter `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
-} // struct size: 16 bytes; struct align: 8 bytes; struct aligned size: 16 bytes; - 🌺 gopium @1pkg
+} // struct size: 16 bytes; struct align: 8 bytes; struct aligned size: 16 bytes; - 🌺 gopium @danog
 
 // Generate writer implementation
 func (w Writer) Generate(loc string) (io.WriteCloser, error) {

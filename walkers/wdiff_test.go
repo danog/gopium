@@ -10,11 +10,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/1pkg/gopium/gopium"
-	"github.com/1pkg/gopium/strategies"
-	"github.com/1pkg/gopium/tests/data"
-	"github.com/1pkg/gopium/tests/mocks"
-	"github.com/1pkg/gopium/typepkg"
+	"github.com/danog/gopium/gopium"
+	"github.com/danog/gopium/strategies"
+	"github.com/danog/gopium/tests/data"
+	"github.com/danog/gopium/tests/mocks"
+	"github.com/danog/gopium/typepkg"
 )
 
 func TestWdiff(t *testing.T) {
@@ -283,7 +283,7 @@ func TestWdiff(t *testing.T) {
 				},
 				{
 					"Name": "D",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.D",
+					"Type": "github.com/danog/gopium/tests/data/multi.D",
 					"Size": 24,
 					"Align": 8,
 					"Ptr": 0,
@@ -314,7 +314,7 @@ func TestWdiff(t *testing.T) {
 			"Fields": [
 				{
 					"Name": "ze",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.ze",
+					"Type": "github.com/danog/gopium/tests/data/multi.ze",
 					"Size": 16,
 					"Align": 8,
 					"Ptr": 16,
@@ -326,7 +326,7 @@ func TestWdiff(t *testing.T) {
 				},
 				{
 					"Name": "D",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.D",
+					"Type": "github.com/danog/gopium/tests/data/multi.D",
 					"Size": 24,
 					"Align": 8,
 					"Ptr": 0,
@@ -338,7 +338,7 @@ func TestWdiff(t *testing.T) {
 				},
 				{
 					"Name": "AZ",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.AZ",
+					"Type": "github.com/danog/gopium/tests/data/multi.AZ",
 					"Size": 40,
 					"Align": 8,
 					"Ptr": 0,
@@ -350,7 +350,7 @@ func TestWdiff(t *testing.T) {
 				},
 				{
 					"Name": "AWA",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.D",
+					"Type": "github.com/danog/gopium/tests/data/multi.D",
 					"Size": 24,
 					"Align": 8,
 					"Ptr": 0,
@@ -381,7 +381,7 @@ func TestWdiff(t *testing.T) {
 				},
 				{
 					"Name": "D",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.A",
+					"Type": "github.com/danog/gopium/tests/data/multi.A",
 					"Size": 8,
 					"Align": 8,
 					"Ptr": 0,
@@ -433,7 +433,7 @@ func TestWdiff(t *testing.T) {
 			"Fields": [
 				{
 					"Name": "D",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.D",
+					"Type": "github.com/danog/gopium/tests/data/multi.D",
 					"Size": 24,
 					"Align": 8,
 					"Ptr": 0,
@@ -476,7 +476,7 @@ func TestWdiff(t *testing.T) {
 			"Fields": [
 				{
 					"Name": "ze",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.ze",
+					"Type": "github.com/danog/gopium/tests/data/multi.ze",
 					"Size": 16,
 					"Align": 8,
 					"Ptr": 16,
@@ -488,7 +488,7 @@ func TestWdiff(t *testing.T) {
 				},
 				{
 					"Name": "AZ",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.AZ",
+					"Type": "github.com/danog/gopium/tests/data/multi.AZ",
 					"Size": 40,
 					"Align": 8,
 					"Ptr": 0,
@@ -500,7 +500,7 @@ func TestWdiff(t *testing.T) {
 				},
 				{
 					"Name": "D",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.D",
+					"Type": "github.com/danog/gopium/tests/data/multi.D",
 					"Size": 24,
 					"Align": 8,
 					"Ptr": 0,
@@ -512,7 +512,7 @@ func TestWdiff(t *testing.T) {
 				},
 				{
 					"Name": "AWA",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.D",
+					"Type": "github.com/danog/gopium/tests/data/multi.D",
 					"Size": 24,
 					"Align": 8,
 					"Ptr": 0,
@@ -531,7 +531,7 @@ func TestWdiff(t *testing.T) {
 			"Fields": [
 				{
 					"Name": "D",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.A",
+					"Type": "github.com/danog/gopium/tests/data/multi.A",
 					"Size": 8,
 					"Align": 8,
 					"Ptr": 0,
@@ -622,7 +622,7 @@ func TestWdiff(t *testing.T) {
 				},
 				{
 					"Name": "D",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.D",
+					"Type": "github.com/danog/gopium/tests/data/multi.D",
 					"Size": 24,
 					"Align": 8,
 					"Ptr": 0,
@@ -653,7 +653,7 @@ func TestWdiff(t *testing.T) {
 			"Fields": [
 				{
 					"Name": "ze",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.ze",
+					"Type": "github.com/danog/gopium/tests/data/multi.ze",
 					"Size": 16,
 					"Align": 8,
 					"Ptr": 16,
@@ -665,7 +665,7 @@ func TestWdiff(t *testing.T) {
 				},
 				{
 					"Name": "D",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.D",
+					"Type": "github.com/danog/gopium/tests/data/multi.D",
 					"Size": 24,
 					"Align": 8,
 					"Ptr": 0,
@@ -677,7 +677,7 @@ func TestWdiff(t *testing.T) {
 				},
 				{
 					"Name": "AZ",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.AZ",
+					"Type": "github.com/danog/gopium/tests/data/multi.AZ",
 					"Size": 32,
 					"Align": 8,
 					"Ptr": 0,
@@ -689,7 +689,7 @@ func TestWdiff(t *testing.T) {
 				},
 				{
 					"Name": "AWA",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.D",
+					"Type": "github.com/danog/gopium/tests/data/multi.D",
 					"Size": 24,
 					"Align": 8,
 					"Ptr": 0,
@@ -729,7 +729,7 @@ func TestWdiff(t *testing.T) {
 			"Fields": [
 				{
 					"Name": "D",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.D",
+					"Type": "github.com/danog/gopium/tests/data/multi.D",
 					"Size": 24,
 					"Align": 8,
 					"Ptr": 0,
@@ -772,7 +772,7 @@ func TestWdiff(t *testing.T) {
 			"Fields": [
 				{
 					"Name": "ze",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.ze",
+					"Type": "github.com/danog/gopium/tests/data/multi.ze",
 					"Size": 16,
 					"Align": 8,
 					"Ptr": 16,
@@ -784,7 +784,7 @@ func TestWdiff(t *testing.T) {
 				},
 				{
 					"Name": "AZ",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.AZ",
+					"Type": "github.com/danog/gopium/tests/data/multi.AZ",
 					"Size": 32,
 					"Align": 8,
 					"Ptr": 0,
@@ -796,7 +796,7 @@ func TestWdiff(t *testing.T) {
 				},
 				{
 					"Name": "D",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.D",
+					"Type": "github.com/danog/gopium/tests/data/multi.D",
 					"Size": 24,
 					"Align": 8,
 					"Ptr": 0,
@@ -808,7 +808,7 @@ func TestWdiff(t *testing.T) {
 				},
 				{
 					"Name": "AWA",
-					"Type": "github.com/1pkg/gopium/tests/data/multi.D",
+					"Type": "github.com/danog/gopium/tests/data/multi.D",
 					"Size": 24,
 					"Align": 8,
 					"Ptr": 0,

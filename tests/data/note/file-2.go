@@ -2,8 +2,8 @@
 
 package note
 
-/* 1pkg - 🌺 gopium @1pkg */
+/* danog - 🌺 gopium @danog */
 type DocCom struct {
 	f complex128
-	// 🌺 gopium @1pkg
+	// 🌺 gopium @danog
 } // doc com

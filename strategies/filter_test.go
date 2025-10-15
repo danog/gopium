@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/1pkg/gopium/gopium"
+	"github.com/danog/gopium/gopium"
 )
 
 func TestFilter(t *testing.T) {

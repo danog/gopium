@@ -9,7 +9,7 @@ type RWC struct {
 	Werr error        `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	Cerr error        `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	_    [40]byte     `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
-} // struct size: 121 bytes; struct align: 8 bytes; struct aligned size: 128 bytes; - 🌺 gopium @1pkg
+} // struct size: 121 bytes; struct align: 8 bytes; struct aligned size: 128 bytes; - 🌺 gopium @danog
 
 // Read mock implementation
 func (rwc *RWC) Read(p []byte) (int, error) {

@@ -1,10 +1,10 @@
 {
 	"name": "gopium",
 	"displayName": "gopium",
-	"publisher": "1pkg",
+	"publisher": "danog",
 	"description": "Gopium vscode extension that provides better experience for usage and simplify interactions with Gopium CLI.",
 	"author": {
-		"name": "Kostiantyn Masliuk - github.com/1pkg"
+		"name": "Kostiantyn Masliuk - github.com/danog"
 	},
 	"license": "MIT",
 	"version": "1.8.0",
@@ -21,7 +21,7 @@
 	"private": true,
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/1pkg/gopium.git"
+		"url": "https://github.com/danog/gopium.git"
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",

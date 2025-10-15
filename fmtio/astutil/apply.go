@@ -10,10 +10,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/1pkg/gopium/collections"
-	"github.com/1pkg/gopium/fmtio"
-	"github.com/1pkg/gopium/gopium"
-	"github.com/1pkg/gopium/typepkg"
+	"github.com/danog/gopium/collections"
+	"github.com/danog/gopium/fmtio"
+	"github.com/danog/gopium/gopium"
+	"github.com/danog/gopium/typepkg"
 
 	"golang.org/x/sync/errgroup"
 )

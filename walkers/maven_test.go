@@ -6,9 +6,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/1pkg/gopium/collections"
-	"github.com/1pkg/gopium/gopium"
-	"github.com/1pkg/gopium/tests/mocks"
+	"github.com/danog/gopium/collections"
+	"github.com/danog/gopium/gopium"
+	"github.com/danog/gopium/tests/mocks"
 )
 
 func TestMavenHas(t *testing.T) {

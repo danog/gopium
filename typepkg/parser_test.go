@@ -15,8 +15,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/1pkg/gopium/gopium"
-	"github.com/1pkg/gopium/tests"
+	"github.com/danog/gopium/gopium"
+	"github.com/danog/gopium/tests"
 
 	"golang.org/x/tools/go/packages"
 )
@@ -58,7 +58,7 @@ func TestParserXToolPackagesAstTypes(t *testing.T) {
 		},
 		"invalid pattern with abs path should return expected parser package": {
 			p: ParserXToolPackagesAst{
-				Pattern: "github.com/1pkg/gopium/gopium",
+				Pattern: "github.com/danog/gopium/gopium",
 				Path:    pdir,
 				//nolint
 				ModeTypes: packages.LoadAllSyntax,
@@ -69,7 +69,7 @@ func TestParserXToolPackagesAstTypes(t *testing.T) {
 		},
 		"empty types mode should return expected empty parser package": {
 			p: ParserXToolPackagesAst{
-				Pattern: "github.com/1pkg/gopium/gopium",
+				Pattern: "github.com/danog/gopium/gopium",
 				Path:    path.Join("..", "gopium"),
 			},
 			ctx: context.Background(),
@@ -77,7 +77,7 @@ func TestParserXToolPackagesAstTypes(t *testing.T) {
 		},
 		"valid pattern and path and mode should return expected parser package": {
 			p: ParserXToolPackagesAst{
-				Pattern: "github.com/1pkg/gopium/gopium",
+				Pattern: "github.com/danog/gopium/gopium",
 				Path:    path.Join("..", "gopium"),
 				//nolint
 				ModeTypes: packages.LoadAllSyntax,
@@ -88,7 +88,7 @@ func TestParserXToolPackagesAstTypes(t *testing.T) {
 		},
 		"valid pattern and path and mode should return expected parser package on abs path": {
 			p: ParserXToolPackagesAst{
-				Pattern: "github.com/1pkg/gopium/gopium",
+				Pattern: "github.com/danog/gopium/gopium",
 				Path:    pdir,
 				//nolint
 				ModeTypes: packages.LoadAllSyntax,
@@ -99,7 +99,7 @@ func TestParserXToolPackagesAstTypes(t *testing.T) {
 		},
 		"valid pattern and path and mode should return expected parser package with tests": {
 			p: ParserXToolPackagesAst{
-				Pattern: "github.com/1pkg/gopium/typepkg",
+				Pattern: "github.com/danog/gopium/typepkg",
 				Path:    sdir,
 				//nolint
 				ModeTypes: packages.LoadAllSyntax,
@@ -110,7 +110,7 @@ func TestParserXToolPackagesAstTypes(t *testing.T) {
 		},
 		"valid pattern and path and mode should return expected parser package skip src": {
 			p: ParserXToolPackagesAst{
-				Pattern: "github.com/1pkg/gopium/gopium",
+				Pattern: "github.com/danog/gopium/gopium",
 				Path:    path.Join("..", "gopium"),
 				//nolint
 				ModeTypes: packages.LoadAllSyntax,
@@ -132,7 +132,7 @@ type Single struct {
 		},
 		"valid pattern and path and mode should return parser error on canceled context": {
 			p: ParserXToolPackagesAst{
-				Pattern: "github.com/1pkg/gopium/gopium",
+				Pattern: "github.com/danog/gopium/gopium",
 				Path:    path.Join("..", "gopium"),
 				//nolint
 				ModeTypes: packages.LoadAllSyntax,
@@ -213,12 +213,12 @@ func TestParserXToolPackagesAstAst(t *testing.T) {
 		},
 		"invalid pattern with relative path should return parser error": {
 			p: ParserXToolPackagesAst{
-				Pattern: "github.com/1pkg/gopium/gopium",
+				Pattern: "github.com/danog/gopium/gopium",
 				Path:    ".",
 				ModeAst: parser.ParseComments | parser.AllErrors,
 			},
 			ctx: context.Background(),
-			err: errors.New(`ast package "github.com/1pkg/gopium/gopium" wasn't found at "."`),
+			err: errors.New(`ast package "github.com/danog/gopium/gopium" wasn't found at "."`),
 		},
 		"valid pattern with root path should return expected parser ast": {
 			p: ParserXToolPackagesAst{
@@ -232,7 +232,7 @@ func TestParserXToolPackagesAstAst(t *testing.T) {
 		},
 		"invalid pattern with full path should return expected parser ast": {
 			p: ParserXToolPackagesAst{
-				Pattern: "1pkg/gopium/1gopium",
+				Pattern: "danog/gopium/1gopium",
 				Path:    pdir,
 				ModeAst: parser.ParseComments | parser.AllErrors,
 			},
@@ -309,7 +309,7 @@ invalid gocode
 		},
 		"invalid pattern with relative path should return expected parser ast with src": {
 			p: ParserXToolPackagesAst{
-				Pattern: "1pkg/gopium/1gopium",
+				Pattern: "danog/gopium/1gopium",
 				Path:    filepath.Join("..", "gopium"),
 				ModeAst: parser.ParseComments | parser.AllErrors,
 			},

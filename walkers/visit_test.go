@@ -8,12 +8,12 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/1pkg/gopium/collections"
-	"github.com/1pkg/gopium/gopium"
-	"github.com/1pkg/gopium/strategies"
-	"github.com/1pkg/gopium/tests/data"
-	"github.com/1pkg/gopium/tests/mocks"
-	"github.com/1pkg/gopium/typepkg"
+	"github.com/danog/gopium/collections"
+	"github.com/danog/gopium/gopium"
+	"github.com/danog/gopium/strategies"
+	"github.com/danog/gopium/tests/data"
+	"github.com/danog/gopium/tests/mocks"
+	"github.com/danog/gopium/typepkg"
 )
 
 func TestWithVisit(t *testing.T) {
@@ -202,7 +202,7 @@ func TestVscope(t *testing.T) {
 					Fields: []gopium.Field{
 						{
 							Name:     "A",
-							Type:     "github.com/1pkg/gopium/tests/data/flat.A",
+							Type:     "github.com/danog/gopium/tests/data/flat.A",
 							Size:     8,
 							Align:    8,
 							Exported: true,
@@ -228,7 +228,7 @@ func TestVscope(t *testing.T) {
 						},
 						{
 							Name:     "A",
-							Type:     "struct{b github.com/1pkg/gopium/tests/data/flat.b; z github.com/1pkg/gopium/tests/data/flat.A}",
+							Type:     "struct{b github.com/danog/gopium/tests/data/flat.b; z github.com/danog/gopium/tests/data/flat.A}",
 							Size:     24,
 							Align:    8,
 							Exported: true,
@@ -247,7 +247,7 @@ func TestVscope(t *testing.T) {
 						},
 						{
 							Name:     "A",
-							Type:     "struct{b github.com/1pkg/gopium/tests/data/flat.b; z github.com/1pkg/gopium/tests/data/flat.A}",
+							Type:     "struct{b github.com/danog/gopium/tests/data/flat.b; z github.com/danog/gopium/tests/data/flat.A}",
 							Size:     24,
 							Align:    8,
 							Exported: true,
@@ -288,7 +288,7 @@ func TestVscope(t *testing.T) {
 						},
 						{
 							Name:     "D",
-							Type:     "github.com/1pkg/gopium/tests/data/flat.D",
+							Type:     "github.com/danog/gopium/tests/data/flat.D",
 							Size:     24,
 							Align:    8,
 							Exported: true,
@@ -341,7 +341,7 @@ func TestVscope(t *testing.T) {
 						},
 						{
 							Name:     "D",
-							Type:     "github.com/1pkg/gopium/tests/data/flat.D",
+							Type:     "github.com/danog/gopium/tests/data/flat.D",
 							Size:     24,
 							Align:    8,
 							Exported: true,
@@ -379,7 +379,7 @@ func TestVscope(t *testing.T) {
 					Fields: []gopium.Field{
 						{
 							Name:     "A",
-							Type:     "github.com/1pkg/gopium/tests/data/nested.A",
+							Type:     "github.com/danog/gopium/tests/data/nested.A",
 							Size:     8,
 							Align:    8,
 							Exported: true,
@@ -405,7 +405,7 @@ func TestVscope(t *testing.T) {
 						},
 						{
 							Name:     "A",
-							Type:     "struct{b github.com/1pkg/gopium/tests/data/nested.b; z github.com/1pkg/gopium/tests/data/nested.A}",
+							Type:     "struct{b github.com/danog/gopium/tests/data/nested.b; z github.com/danog/gopium/tests/data/nested.A}",
 							Size:     24,
 							Align:    8,
 							Exported: true,
@@ -423,7 +423,7 @@ func TestVscope(t *testing.T) {
 						},
 						{
 							Name:     "C",
-							Type:     "github.com/1pkg/gopium/tests/data/nested.C",
+							Type:     "github.com/danog/gopium/tests/data/nested.C",
 							Size:     48,
 							Align:    8,
 							Ptr:      8,
@@ -462,7 +462,7 @@ func TestVscope(t *testing.T) {
 					Fields: []gopium.Field{
 						{
 							Name:     "D",
-							Type:     "github.com/1pkg/gopium/tests/data/multi.D",
+							Type:     "github.com/danog/gopium/tests/data/multi.D",
 							Size:     24,
 							Align:    8,
 							Exported: true,
@@ -486,7 +486,7 @@ func TestVscope(t *testing.T) {
 					Fields: []gopium.Field{
 						{
 							Name:     "ze",
-							Type:     "github.com/1pkg/gopium/tests/data/multi.ze",
+							Type:     "github.com/danog/gopium/tests/data/multi.ze",
 							Size:     16,
 							Align:    8,
 							Ptr:      16,
@@ -494,7 +494,7 @@ func TestVscope(t *testing.T) {
 						},
 						{
 							Name:     "AZ",
-							Type:     "github.com/1pkg/gopium/tests/data/multi.AZ",
+							Type:     "github.com/danog/gopium/tests/data/multi.AZ",
 							Size:     32,
 							Align:    8,
 							Exported: true,
@@ -502,7 +502,7 @@ func TestVscope(t *testing.T) {
 						},
 						{
 							Name:     "D",
-							Type:     "github.com/1pkg/gopium/tests/data/multi.D",
+							Type:     "github.com/danog/gopium/tests/data/multi.D",
 							Size:     24,
 							Align:    8,
 							Exported: true,
@@ -510,7 +510,7 @@ func TestVscope(t *testing.T) {
 						},
 						{
 							Name:     "AWA",
-							Type:     "github.com/1pkg/gopium/tests/data/multi.D",
+							Type:     "github.com/danog/gopium/tests/data/multi.D",
 							Size:     24,
 							Align:    8,
 							Exported: true,
@@ -678,7 +678,7 @@ func TestVdeep(t *testing.T) {
 					Fields: []gopium.Field{
 						{
 							Name:     "A",
-							Type:     "github.com/1pkg/gopium/tests/data/flat.A",
+							Type:     "github.com/danog/gopium/tests/data/flat.A",
 							Size:     8,
 							Align:    8,
 							Exported: true,
@@ -704,7 +704,7 @@ func TestVdeep(t *testing.T) {
 						},
 						{
 							Name:     "A",
-							Type:     "struct{b github.com/1pkg/gopium/tests/data/flat.b; z github.com/1pkg/gopium/tests/data/flat.A}",
+							Type:     "struct{b github.com/danog/gopium/tests/data/flat.b; z github.com/danog/gopium/tests/data/flat.A}",
 							Size:     24,
 							Align:    8,
 							Exported: true,
@@ -723,7 +723,7 @@ func TestVdeep(t *testing.T) {
 						},
 						{
 							Name:     "A",
-							Type:     "struct{b github.com/1pkg/gopium/tests/data/flat.b; z github.com/1pkg/gopium/tests/data/flat.A}",
+							Type:     "struct{b github.com/danog/gopium/tests/data/flat.b; z github.com/danog/gopium/tests/data/flat.A}",
 							Size:     24,
 							Align:    8,
 							Exported: true,
@@ -764,7 +764,7 @@ func TestVdeep(t *testing.T) {
 						},
 						{
 							Name:     "D",
-							Type:     "github.com/1pkg/gopium/tests/data/flat.D",
+							Type:     "github.com/danog/gopium/tests/data/flat.D",
 							Size:     24,
 							Align:    8,
 							Exported: true,
@@ -817,7 +817,7 @@ func TestVdeep(t *testing.T) {
 						},
 						{
 							Name:     "D",
-							Type:     "github.com/1pkg/gopium/tests/data/flat.D",
+							Type:     "github.com/danog/gopium/tests/data/flat.D",
 							Size:     24,
 							Align:    8,
 							Exported: true,
@@ -855,7 +855,7 @@ func TestVdeep(t *testing.T) {
 					Fields: []gopium.Field{
 						{
 							Name:     "A",
-							Type:     "github.com/1pkg/gopium/tests/data/nested.A",
+							Type:     "github.com/danog/gopium/tests/data/nested.A",
 							Size:     8,
 							Align:    8,
 							Exported: true,
@@ -881,7 +881,7 @@ func TestVdeep(t *testing.T) {
 						},
 						{
 							Name:     "A",
-							Type:     "struct{b github.com/1pkg/gopium/tests/data/nested.b; z github.com/1pkg/gopium/tests/data/nested.A}",
+							Type:     "struct{b github.com/danog/gopium/tests/data/nested.b; z github.com/danog/gopium/tests/data/nested.A}",
 							Size:     24,
 							Align:    8,
 							Exported: true,
@@ -893,7 +893,7 @@ func TestVdeep(t *testing.T) {
 					Fields: []gopium.Field{
 						{
 							Name:     "b",
-							Type:     "github.com/1pkg/gopium/tests/data/nested.b",
+							Type:     "github.com/danog/gopium/tests/data/nested.b",
 							Size:     16,
 							Align:    8,
 							Embedded: true,
@@ -905,7 +905,7 @@ func TestVdeep(t *testing.T) {
 					Fields: []gopium.Field{
 						{
 							Name:     "A",
-							Type:     "github.com/1pkg/gopium/tests/data/nested.A",
+							Type:     "github.com/danog/gopium/tests/data/nested.A",
 							Size:     8,
 							Align:    8,
 							Exported: true,
@@ -964,7 +964,7 @@ func TestVdeep(t *testing.T) {
 						},
 						{
 							Name:     "C",
-							Type:     "github.com/1pkg/gopium/tests/data/nested.C",
+							Type:     "github.com/danog/gopium/tests/data/nested.C",
 							Size:     48,
 							Align:    8,
 							Ptr:      8,
@@ -1003,7 +1003,7 @@ func TestVdeep(t *testing.T) {
 					Fields: []gopium.Field{
 						{
 							Name:     "D",
-							Type:     "github.com/1pkg/gopium/tests/data/multi.D",
+							Type:     "github.com/danog/gopium/tests/data/multi.D",
 							Size:     24,
 							Align:    8,
 							Exported: true,
@@ -1027,7 +1027,7 @@ func TestVdeep(t *testing.T) {
 					Fields: []gopium.Field{
 						{
 							Name:     "ze",
-							Type:     "github.com/1pkg/gopium/tests/data/multi.ze",
+							Type:     "github.com/danog/gopium/tests/data/multi.ze",
 							Size:     16,
 							Align:    8,
 							Ptr:      16,
@@ -1035,7 +1035,7 @@ func TestVdeep(t *testing.T) {
 						},
 						{
 							Name:     "AZ",
-							Type:     "github.com/1pkg/gopium/tests/data/multi.AZ",
+							Type:     "github.com/danog/gopium/tests/data/multi.AZ",
 							Size:     32,
 							Align:    8,
 							Exported: true,
@@ -1043,7 +1043,7 @@ func TestVdeep(t *testing.T) {
 						},
 						{
 							Name:     "D",
-							Type:     "github.com/1pkg/gopium/tests/data/multi.D",
+							Type:     "github.com/danog/gopium/tests/data/multi.D",
 							Size:     24,
 							Align:    8,
 							Exported: true,
@@ -1051,7 +1051,7 @@ func TestVdeep(t *testing.T) {
 						},
 						{
 							Name:     "AWA",
-							Type:     "github.com/1pkg/gopium/tests/data/multi.D",
+							Type:     "github.com/danog/gopium/tests/data/multi.D",
 							Size:     24,
 							Align:    8,
 							Exported: true,
@@ -1063,7 +1063,7 @@ func TestVdeep(t *testing.T) {
 					Fields: []gopium.Field{
 						{
 							Name:     "D",
-							Type:     "github.com/1pkg/gopium/tests/data/multi.A",
+							Type:     "github.com/danog/gopium/tests/data/multi.A",
 							Size:     8,
 							Align:    8,
 							Exported: true,

@@ -4,8 +4,8 @@ import (
 	"go/types"
 	"sync"
 
-	"github.com/1pkg/gopium/collections"
-	"github.com/1pkg/gopium/gopium"
+	"github.com/danog/gopium/collections"
+	"github.com/danog/gopium/gopium"
 )
 
 // ptrsizealign defines data transfer
@@ -16,7 +16,7 @@ type ptrsizealign struct {
 	size  int64   `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	align int64   `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	_     [8]byte `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
-} // struct size: 32 bytes; struct align: 8 bytes; struct aligned size: 32 bytes; struct ptr scan size: 0 bytes; - 🌺 gopium @1pkg
+} // struct size: 32 bytes; struct align: 8 bytes; struct aligned size: 32 bytes; struct ptr scan size: 0 bytes; - 🌺 gopium @danog
 
 // maven defines visiting helper
 // that aggregates some useful
@@ -27,7 +27,7 @@ type maven struct {
 	ref   *collections.Reference `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	store sync.Map               `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	_     [48]byte               `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
-} // struct size: 128 bytes; struct align: 8 bytes; struct aligned size: 128 bytes; struct ptr scan size: 72 bytes; - 🌺 gopium @1pkg
+} // struct size: 128 bytes; struct align: 8 bytes; struct aligned size: 128 bytes; struct ptr scan size: 72 bytes; - 🌺 gopium @danog
 
 // has defines struct store id helper
 // that uses locator to build id

@@ -4,7 +4,7 @@ import (
 	"context"
 	"go/ast"
 
-	"github.com/1pkg/gopium/gopium"
+	"github.com/danog/gopium/gopium"
 
 	"golang.org/x/sync/errgroup"
 )
@@ -12,7 +12,7 @@ import (
 // Package ast asyn pesists package implementation
 // which persists one ast file by one ast file
 // to fmtio writer by using printer
-type Package struct{} // struct size: 0 bytes; struct align: 1 bytes; struct aligned size: 0 bytes; struct ptr scan size: 0 bytes; - 🌺 gopium @1pkg
+type Package struct{} // struct size: 0 bytes; struct align: 1 bytes; struct aligned size: 0 bytes; struct ptr scan size: 0 bytes; - 🌺 gopium @danog
 
 // Persist package implementation
 func (Package) Persist(

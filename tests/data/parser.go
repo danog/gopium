@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/1pkg/gopium/gopium"
-	"github.com/1pkg/gopium/tests"
-	"github.com/1pkg/gopium/typepkg"
+	"github.com/danog/gopium/gopium"
+	"github.com/danog/gopium/tests"
+	"github.com/danog/gopium/typepkg"
 
 	"golang.org/x/tools/go/packages"
 )
@@ -28,18 +28,18 @@ type typesloc struct {
 	loc gopium.Locator `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	pkg *types.Package `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	_   [8]byte        `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
-} // struct size: 32 bytes; struct align: 8 bytes; struct aligned size: 32 bytes; - 🌺 gopium @1pkg
+} // struct size: 32 bytes; struct align: 8 bytes; struct aligned size: 32 bytes; - 🌺 gopium @danog
 
 // Parser defines tests data parser implementation
 // that adds internal caching for results
 type Parser struct {
 	p gopium.Parser `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
-} // struct size: 16 bytes; struct align: 8 bytes; struct aligned size: 16 bytes; - 🌺 gopium @1pkg
+} // struct size: 16 bytes; struct align: 8 bytes; struct aligned size: 16 bytes; - 🌺 gopium @danog
 
 // NewParser creates parser for single tests data
 func NewParser(pkg string) gopium.Parser {
 	p := &typepkg.ParserXToolPackagesAst{
-		Pattern: fmt.Sprintf("github.com/1pkg/gopium/tests/data/%s", pkg),
+		Pattern: fmt.Sprintf("github.com/danog/gopium/tests/data/%s", pkg),
 		Path:    filepath.Join(tests.Gopium, "tests", "data", pkg),
 		//nolint
 		ModeTypes:  packages.LoadAllSyntax,

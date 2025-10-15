@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/1pkg/gopium/gopium"
+	"github.com/danog/gopium/gopium"
 )
 
 // Flat defines strucs flat collection

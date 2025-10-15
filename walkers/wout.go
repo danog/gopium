@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 	"regexp"
 
-	"github.com/1pkg/gopium/collections"
-	"github.com/1pkg/gopium/fmtio"
-	"github.com/1pkg/gopium/gopium"
+	"github.com/danog/gopium/collections"
+	"github.com/danog/gopium/fmtio"
+	"github.com/danog/gopium/gopium"
 )
 
 // list of wout presets
@@ -39,7 +39,7 @@ type wout struct {
 	deep    bool              `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	bref    bool              `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	_       [6]byte           `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
-} // struct size: 64 bytes; struct align: 8 bytes; struct aligned size: 64 bytes; struct ptr scan size: 56 bytes; - 🌺 gopium @1pkg
+} // struct size: 64 bytes; struct align: 8 bytes; struct aligned size: 64 bytes; struct ptr scan size: 56 bytes; - 🌺 gopium @danog
 
 // With erich wast walker with external visiting parameters
 // parser, exposer instances and additional visiting flags

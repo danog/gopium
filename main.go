@@ -11,8 +11,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/1pkg/gopium/gopium"
-	"github.com/1pkg/gopium/runners"
+	"github.com/danog/gopium/gopium"
+	"github.com/danog/gopium/runners"
 	"github.com/spf13/cobra"
 )
 
@@ -49,7 +49,7 @@ func init() {
 		Use:     "gopium -flag_0 -flag_n walker package strategy_1 strategy_2 strategy_3 ...",
 		Short:   gopium.STAMP,
 		Version: gopium.VERSION,
-		Example: "gopium -r ^A go_std 1pkg/gopium filter_pads memory_pack separate_padding_cpu_l1_top separate_padding_cpu_l1_bottom",
+		Example: "gopium -r ^A go_std danog/gopium filter_pads memory_pack separate_padding_cpu_l1_top separate_padding_cpu_l1_bottom",
 		Long: `
 Gopium is the tool that was designed to automate and simplify some common performance transformations for structs, such as:
 - cpu cache alignment

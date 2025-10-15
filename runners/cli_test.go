@@ -11,13 +11,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/1pkg/gopium/fmtio"
-	"github.com/1pkg/gopium/gopium"
-	"github.com/1pkg/gopium/strategies"
-	"github.com/1pkg/gopium/tests"
-	"github.com/1pkg/gopium/tests/mocks"
-	"github.com/1pkg/gopium/typepkg"
-	"github.com/1pkg/gopium/walkers"
+	"github.com/danog/gopium/fmtio"
+	"github.com/danog/gopium/gopium"
+	"github.com/danog/gopium/strategies"
+	"github.com/danog/gopium/tests"
+	"github.com/danog/gopium/tests/mocks"
+	"github.com/danog/gopium/typepkg"
+	"github.com/danog/gopium/walkers"
 
 	"golang.org/x/tools/go/packages"
 )

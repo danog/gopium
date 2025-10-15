@@ -6,8 +6,8 @@ package note
 type Note struct {
 	// AAAA
 	A string // zzz
-	// 🌺 gopium @1pkg
-	B string /* 1pkg - 🌺 gopium @1pkg */
+	// 🌺 gopium @danog
+	B string /* danog - 🌺 gopium @danog */
 	// C string
 	C string
 } // some comment

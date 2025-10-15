@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/1pkg/gopium/gopium"
-	"github.com/1pkg/gopium/tests/mocks"
+	"github.com/danog/gopium/gopium"
+	"github.com/danog/gopium/tests/mocks"
 )
 
 func TestPipe(t *testing.T) {
@@ -86,8 +86,8 @@ func TestPipe(t *testing.T) {
 					{
 						Name:    "test",
 						Type:    "test",
-						Doc:     []string{"// field size: 0 bytes; field align: 0 bytes; field ptr: 0 bytes; - 🌺 gopium @1pkg"},
-						Comment: []string{"// field size: 0 bytes; field align: 0 bytes; field ptr: 0 bytes; - 🌺 gopium @1pkg"},
+						Doc:     []string{"// field size: 0 bytes; field align: 0 bytes; field ptr: 0 bytes; - 🌺 gopium @danog"},
+						Comment: []string{"// field size: 0 bytes; field align: 0 bytes; field ptr: 0 bytes; - 🌺 gopium @danog"},
 					},
 				},
 			},
@@ -137,7 +137,7 @@ func TestPipe(t *testing.T) {
 					{
 						Name:    "test",
 						Type:    "test",
-						Comment: []string{"// field size: 0 bytes; field align: 0 bytes; field ptr: 0 bytes; - 🌺 gopium @1pkg"},
+						Comment: []string{"// field size: 0 bytes; field align: 0 bytes; field ptr: 0 bytes; - 🌺 gopium @danog"},
 					},
 				},
 			},

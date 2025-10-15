@@ -6,7 +6,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/1pkg/gopium/gopium"
+	"github.com/danog/gopium/gopium"
 )
 
 // Hierarchic defines strucs hierarchic collection
@@ -15,7 +15,7 @@ type Hierarchic struct {
 	cats map[string]Flat `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	rcat string          `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
 	_    [8]byte         `gopium:"filter_pads,memory_pack,cache_rounding_cpu_l1_discrete,struct_annotate_comment,add_tag_group_force"`
-} // struct size: 32 bytes; struct align: 8 bytes; struct aligned size: 32 bytes; struct ptr scan size: 16 bytes; - 🌺 gopium @1pkg
+} // struct size: 32 bytes; struct align: 8 bytes; struct aligned size: 32 bytes; struct ptr scan size: 16 bytes; - 🌺 gopium @danog
 
 // NewHierarchic creates new hierarchic
 // collection with root category
